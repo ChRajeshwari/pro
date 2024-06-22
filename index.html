@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Using JS</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="main">
+        <input type="text" onclick="myFunction()" autocomplete="on" class="input1" id="display" placeholder="Select" >
+        <br>
+        <div class="content" id="content1">
+        <input type="text" class="input2" placeholder="Search" id="search">
+       
+        <ul type="none">
+            <li>Hyderabad</li>
+            <li>Warangal</li>
+            <li>Nizamabad</li>
+            <li>Nalgonda</li>
+            <li>Vijayawada</li>
+            <li>Kammam</li>
+            
+        </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+        let selector=document.getElementById("display");
+        let cont=document.getElementById("content1");
+        
+       selector.onfocus=function(){
+        if(document.getElementById("content1").style.display==="block"){
+            document.getElementById("content1").style.display="none";
+        }else{
+            document.getElementById("content1").style.display="block";
+        }
+    }
+
+
+   
+    </script>
+
+
+</body>
+</html>
